@@ -312,7 +312,6 @@ class TelegramAIBot:
         await self.dp.start_polling(self.bot, skip_updates=True)
 
 if __name__ == '__main__':
-    # Создаем экземпляр бота и запускаем его
     try:
         config = BotConfig.load_from_env()
         bot_instance = TelegramAIBot(config)
